@@ -48,3 +48,10 @@ kubectl get pods
 ```
 
 Confirm that the pod's status changes to "Running," indicating that kubelet has successfully started the static pod.
+
+
+### 4. What is the path of the directory holding the static pod definition files?
+
+```
+staticPodPath: /etc/kubernetes/manifests
+```
