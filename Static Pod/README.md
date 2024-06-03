@@ -67,21 +67,21 @@ ls /etc/kubernetes/manifests
 cat /etc/kubernetes/manifests/kube-apiserver.yaml
 ```
 
-Create a static pod named static-busybox that uses the busybox image and the command sleep 1000
+### 7. Create a static pod named static-busybox that uses the busybox image and the command sleep 1000
 
--first create the pod 
+- first create the pod 
 
 ```
 kubectl run static-busybox --image=busybox --dry-run=client -o yaml --command -- sleep 1000
 kubectl run static-busybox --image=busybox --dry-run=client -o yaml --command -- sleep 1000 >static_busybox.yaml
 ```
 
--copy yaml into static pod path
+- copy yaml into static pod path
 ```
 cp static_busybox.yaml /etc/kubernetes/manifests
 ```
 
--get all pod details
+- get all pod details
 ```
 kubectl get pods
 ```
