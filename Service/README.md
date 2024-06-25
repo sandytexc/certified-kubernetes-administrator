@@ -54,6 +54,7 @@ spec:
 ```
 - Apply the configuration using below command:
 ```
+kubectl expose pod blue --type=NodePort --name=new-blue-svc --dry-run -0 yaml >blue-service.yaml
 kubectl apply -f blue-service.yaml
 ```
 
