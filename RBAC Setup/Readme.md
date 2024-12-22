@@ -137,7 +137,7 @@ kubectl apply -f clusterrolebinding.yaml
 kubectl get clusterrolebinding
 ```
 
-## To check the permissions of the riya user across all namespaces:
+## To check the permissions of the Sandeep user across all namespaces:
 ```
 kubectl auth can-i get secret --as Sandeep -A
 ```
