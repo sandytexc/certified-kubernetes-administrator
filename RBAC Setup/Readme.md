@@ -4,7 +4,7 @@ This guide provides instructions for creating roles, cluster roles, role binding
 ## Role
 The role.yaml file contains the configuration for creating a role named pod-reader. The role allows the user to perform actions like get, watch, and list on pods resources.
 
-``apiVersion: rbac.authorization.k8s.io/v1
+''apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: default
@@ -12,4 +12,4 @@ metadata:
 rules:
 - apiGroups: [""]
   resources: ["pods"]
-  verbs: ["get", "watch", "list"]``
+  verbs: ["get", "watch", "list"]''
