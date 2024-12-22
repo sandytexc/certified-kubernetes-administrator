@@ -111,7 +111,7 @@ kubectl get rolebinding
 kubectl auth can-i get secret --as dev -n development
 ```
 ## Cluster Role Binding
-The clusterrolebinding.yaml file contains the configuration for creating a cluster role binding named read-secrets-global. This cluster role binding binds the secret-reader cluster role to the user riya globally.
+The clusterrolebinding.yaml file contains the configuration for creating a cluster role binding named read-secrets-global. This cluster role binding binds the secret-reader cluster role to the user Sandeep globally.
 
 ```
 apiVersion: rbac.authorization.k8s.io/v1
